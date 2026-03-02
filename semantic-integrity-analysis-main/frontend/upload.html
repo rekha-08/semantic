@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Document | LegalSI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="index.html#home">LegalSI</a>
+        <div class="page-links">
+          <a class="page-link active" href="upload.html">Upload</a>
+          <a class="page-link" href="issues.html">Issue Analysis</a>
+          <a class="page-link" href="summary.html">Final Summary</a>
+          <button id="logoutBtn" class="logout-btn" type="button">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="flow-main">
+      <section class="container flow-card">
+        <div class="upload-header">
+          <h1>Upload Document</h1>
+          <span id="userBadge" class="user-badge"></span>
+        </div>
+        <p class="upload-subtitle">Upload legal document, then continue to issue analysis and final summary pages.</p>
+
+        <form id="uploadForm" class="auth-form" novalidate>
+          <div class="field">
+            <label for="scanMode">Scan Mode</label>
+            <select id="scanMode" class="control">
+              <option>Standard Scan (Recommended)</option>
+              <option>Deep Search (Fuzzy)</option>
+              <option>Strict (Duplicates Only)</option>
+            </select>
+          </div>
+
+          <div class="field upload-zone-wrap">
+            <label for="legalFile">Upload File (PDF/DOCX/TXT)</label>
+            <label class="upload-zone" for="legalFile">
+              <span class="upload-icon">+</span>
+              <span class="upload-title">Drop your document or click to browse</span>
+              <span class="upload-hint">Supported: PDF, DOCX, TXT</span>
+            </label>
+            <input id="legalFile" class="control file-input-hidden" type="file" accept=".pdf,.docx,.txt" required />
+          </div>
+
+          <div id="analysisInputSummary" class="summary-box hidden"></div>
+
+          <div class="workflow-actions">
+            <a class="secondary-btn as-link" href="index.html#home">Back to Home</a>
+            <button id="runUploadBtn" class="submit-btn" type="submit">Upload and Analyze</button>
+          </div>
+        </form>
+
+        <div id="loadingState" class="loading-panel hidden" aria-live="polite">
+          <div class="spinner"></div>
+          <p>Analyzing document. Please wait...</p>
+        </div>
+
+        <p id="uploadMessage" class="message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

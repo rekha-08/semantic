@@ -1,0 +1,31 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#EAF2FB"/>
+  <rect x="950" y="120" width="480" height="640" rx="18" fill="#FFFFFF" stroke="#C9DCEC" stroke-width="3"/>
+  <rect x="995" y="190" width="390" height="14" rx="7" fill="#D7E6F6"/>
+  <rect x="995" y="228" width="330" height="10" rx="5" fill="#E2ECF8"/>
+  <rect x="995" y="254" width="360" height="10" rx="5" fill="#E2ECF8"/>
+  <rect x="995" y="280" width="300" height="10" rx="5" fill="#E2ECF8"/>
+  <rect x="995" y="332" width="390" height="14" rx="7" fill="#D7E6F6"/>
+  <rect x="995" y="370" width="355" height="10" rx="5" fill="#E2ECF8"/>
+  <rect x="995" y="396" width="325" height="10" rx="5" fill="#E2ECF8"/>
+  <rect x="995" y="422" width="285" height="10" rx="5" fill="#E2ECF8"/>
+  <rect x="995" y="474" width="390" height="14" rx="7" fill="#D7E6F6"/>
+  <rect x="995" y="512" width="344" height="10" rx="5" fill="#E2ECF8"/>
+  <rect x="995" y="538" width="310" height="10" rx="5" fill="#E2ECF8"/>
+  <rect x="995" y="564" width="280" height="10" rx="5" fill="#E2ECF8"/>
+
+  <circle cx="860" cy="240" r="130" fill="#D9E9FB"/>
+  <circle cx="860" cy="240" r="98" fill="#F7FBFF" stroke="#9ABBE0" stroke-width="5"/>
+  <path d="M860 180V248L902 280" stroke="#2C6FB6" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="860" cy="240" r="12" fill="#2C6FB6"/>
+
+  <rect x="700" y="430" width="250" height="165" rx="14" fill="#FFFFFF" stroke="#C9DCEC" stroke-width="3"/>
+  <text x="728" y="472" fill="#285787" font-family="Arial, sans-serif" font-size="24" font-weight="700">Issue Types</text>
+  <rect x="728" y="495" width="170" height="10" rx="5" fill="#2F73FF"/>
+  <rect x="728" y="523" width="135" height="10" rx="5" fill="#EF8A17"/>
+  <rect x="728" y="551" width="98" height="10" rx="5" fill="#D63F4A"/>
+
+  <text x="728" y="510" fill="#244A72" font-family="Arial, sans-serif" font-size="14">Duplication</text>
+  <text x="728" y="538" fill="#244A72" font-family="Arial, sans-serif" font-size="14">Inconsistency</text>
+  <text x="728" y="566" fill="#244A72" font-family="Arial, sans-serif" font-size="14">Contradiction</text>
+</svg>
